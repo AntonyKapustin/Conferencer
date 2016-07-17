@@ -13,6 +13,7 @@ public class ConferencerRestApplicationTests {
 
 	@Test
 	public void contextLoads() {
+
 	}
 
 }
