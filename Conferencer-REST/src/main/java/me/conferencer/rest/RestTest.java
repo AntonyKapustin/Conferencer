@@ -18,7 +18,10 @@ public class RestTest {
     )
     @RequestMapping(value = "/greeting", method = RequestMethod.GET)
     @ResponseStatus(HttpStatus.OK)
-    public String greeting(@RequestParam(value="name", defaultValue="World") String name) {
+    public String greeting(
+            @ApiParam(name = "userName", value = "Alphanumeric login to the application", required = true)
+            @RequestParam(value="name", defaultValue="World")
+                    String name) {
         return "Hello " + name;
     }
 
